@@ -1,2 +1,5 @@
-# portfolio
-the portfolio of myself
+# name
+zirui zhang
+# position
+data scientist
+
