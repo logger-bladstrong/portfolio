@@ -196,7 +196,7 @@
     <div id="welcome-screen">
         <div class="grid-bg"></div>
         <div class="glass-box" id="enter-btn">
-            <h1>欢迎来到 zirui zhang 的世界</h1>
+            <h1>Welcome to zirui zhang World</h1>
             <p>SYSTEM ONLINE // INITIALIZING...</p>
         </div>
     </div>
@@ -207,7 +207,7 @@
             <div class="carousel-slide slide-1 active"></div>
             <div class="carousel-slide slide-2"></div>
             <div class="carousel-slide slide-3"></div>
-            <div class="hero-overlay"><h2>Simplicity & Cold</h2></div>
+            <div class="hero-overlay"><h2>about myself</h2></div>
         </section>
 
         <section class="blocks-container">
@@ -226,9 +226,209 @@
             </div>
         </section>
 
+
+        <section>
+
+            
+                            <!-- D. 个人简历页 (Resume) -->
+            <div id="page-resume" class="page-resume">
+                <!-- 顶部导航 -->
+                <div class="page-header">
+                    <div class="page-title">RESUME_DATA</div>
+                    <button class="back-btn" onclick="goHome()">CAN NOT [ ESC ] ???</button>
+                </div>
+
+                <!-- 简历主体容器 -->
+                <div class="resume-container fade-in">
+                    
+                    <!-- 左栏：个人信息 (ID Card) -->
+                    <div class="resume-left">
+                        <!-- 头像框：请替换 src 为你的真实照片路径 -->
+                        <div class="avatar-box">
+                            <img src="/protfolio/mowan.jpg" alt="Avatar">
+                        </div>
+                        
+                        <h2 class="resume-name">Zirui Zhang</h2>
+                        <div class="resume-label">STATUS: ONLINE</div>
+                        
+                        <div class="contact-info">
+                            <p><strong>EMAIL:</strong><br>zhangzirui@arizona.edu</p>
+                            <!-- 你可以在这里加电话或Github -->
+                        </div>
+                    </div>
+
+                    <!-- 右栏：详细履历 (Data Panel) -->
+                    <div class="resume-right">
+                        
+                        <!-- 1. 职业意向 -->
+                        <div class="resume-section">
+                            <h3 class="resume-title">/// TARGET ROLE</h3>
+                            <p class="resume-highlight">DATA SCIENTIST</p>
+                        </div>
+
+                        <!-- 2. 技能掌握 -->
+                        <div class="resume-section">
+                            <h3 class="resume-title">/// TECH STACK</h3>
+                            <div class="skill-grid">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">R Language</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Stata</span>
+                                <span class="skill-tag">EViews</span>
+                                <span class="skill-tag highlight">Vue.js (Basic)</span>
+                            </div>
+                        </div>
+
+                        <!-- 3. 教育背景 -->
+                        <div class="resume-section">
+                            <h3 class="resume-title">/// EDUCATION</h3>
+                            <div class="resume-item">
+                                <div class="item-header">
+                                    <span>Capital University of Economics and Business</span>
+                                    <span class="item-date">202X - 202X</span>
+                                </div>
+                                <p class="item-sub">B.S. in Statistics (Sino-Foreign Joint Program)</p>
+                            </div>
+                        </div>
+
+                        <!-- 4. 学术成果 -->
+                        <div class="resume-section">
+                            <h3 class="resume-title">/// ACADEMIC ACHIEVEMENTS</h3>
+                            <p style="color: #666; font-family: 'Courier New', monospace;">
+                                > NO_DATA_FOUND <br>
+                                > [ Pending future updates... ]
+                            </p>
+                        </div>
+
+                        <!-- 5. 本科作品 -->
+                        <div class="resume-section">
+                            <h3 class="resume-title">/// PROJECTS</h3>
+                            
+                            <!-- 项目 1 -->
+                            <div class="resume-item">
+                                <div class="item-header">
+                                    <span>Simple Banking System Simulation</span>
+                                    <span class="item-tag">C Language</span>
+                                </div>
+                                <p>
+                                    Solo Developer. Designed and implemented a basic banking system focusing on backend logic, 
+                                    including user account management, transaction processing, and data security logic.
+                                </p>
+                            </div>
+
+                            <!-- 项目 2 -->
+                            <div class="resume-item">
+                                <div class="item-header">
+                                    <span>Time Series Analysis on Amazon Data</span>
+                                    <span class="item-tag">R Language</span>
+                                </div>
+                                <p>
+                                    Team Collaboration. Analyzed Amazon's historical data trends. 
+                                    Performed data cleaning, visualization, and modeled trends using Time Series algorithms to predict future fluctuations.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 局部样式：只作用于简历页 -->
+                <style>
+                    .page-resume {
+                        background-color: #000;
+
+                    }
+
+
+
+                    .resume-container {
+                        display: flex;
+                        flex-wrap: wrap; /* 手机端自动换行 */
+                        gap: 40px;
+                        max-width: 1000px;
+                        margin: 0 auto;
+                    }
+
+                    /* 左栏样式 */
+                    .resume-left {
+                        flex: 1;
+                        min-width: 250px;
+                        background: rgba(255,255,255,0.05);
+                        border: 1px solid #333;
+                        padding: 30px;
+                        text-align: center;
+                        height: fit-content;
+                    }
+                    .avatar-box {
+                        width: 150px; height: 150px;
+                        margin: 0 auto 20px;
+                        border: 2px solid var(--acid-green);
+                        overflow: hidden;
+                        border-radius: 50%; /* 圆形头像 */
+                        background: #000;
+                    }
+                    .avatar-box img { width: 100%; height: 100%; object-fit: cover; }
+                    .resume-name { color: #fff; font-size: 1.8rem; text-transform: uppercase; margin-bottom: 5px; }
+                    .resume-label { color: var(--acid-green); font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 30px; }
+                    .contact-info { text-align: left; border-top: 1px dashed #444; padding-top: 20px; color: #ccc; font-size: 0.9rem; }
+
+                    /* 右栏样式 */
+                    .resume-right { flex: 3; min-width: 300px; }
+                    .resume-section { margin-bottom: 40px; }
+                    .resume-title {
+                        font-size: 1rem; color: #666;
+                        border-bottom: 1px solid var(--acid-green);
+                        padding-bottom: 5px; margin-bottom: 15px;
+                        letter-spacing: 2px;
+                    }
+                    .resume-highlight { font-size: 2rem; color: #fff; font-weight: bold; }
+
+                    /* 技能标签 */
+                    .skill-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+                    .skill-tag {
+                        border: 1px solid #444; color: #aaa;
+                        padding: 5px 15px; font-size: 0.9rem;
+                        font-family: 'Courier New', monospace;
+                        transition: 0.3s;
+                    }
+                    .skill-tag:hover { border-color: var(--acid-green); color: var(--acid-green); background: rgba(218, 246, 0, 0.05); }
+                    .skill-tag.highlight { border-color: #666; color: #fff; }
+
+                    /* 项目与经历 */
+                    .resume-item { margin-bottom: 25px; }
+                    .item-header {
+                        display: flex; justify-content: space-between; align-items: center;
+                        margin-bottom: 8px;
+                    }
+                    .item-header span:first-child { font-size: 1.2rem; color: #fff; font-weight: bold; }
+                    .item-date { color: var(--acid-green); font-family: monospace; }
+                    .item-tag { background: #333; color: #ccc; font-size: 0.7rem; padding: 2px 6px; border-radius: 2px; }
+                    .item-sub { color: #ccc; font-style: italic; }
+                    .resume-item p { color: #999; line-height: 1.6; font-size: 0.95rem; }
+                </style>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="about-section">
             <h4 style="letter-spacing:4px; color:#ccc;">ABOUT ME</h4>
-            <p style="margin-top:20px; color:#555;">这里是 Zirui Zhang。保持冷静，保持思考。</p>
+            <p style="margin-top:20px; color:#555;">there is  Zirui Zhang. calm down，stay focused.</p>
         </section>
 
         <footer>&copy; 2026 Zirui Zhang. All Rights Reserved.</footer>
@@ -246,30 +446,30 @@
             <ul class="tech-list">
                 <!-- 点击这一项，打开具体的文章详情 -->
                 <li class="tech-item" onclick="openPost('post-1')">
-                    <span class="post-title">LOG_001: 如何不让熊大熊二捣乱</span>
+                    <span class="post-title">LOG_001: new founding</span>
                     <span class="post-date">2026-01-26</span>
                 </li>
                 <li class="tech-item">
-                    <span class="post-title">LOG_002: 设计风格的极简主义探索</span>
+                    <span class="post-title">LOG_002: [ENCRYPTED]</span>
                     <span class="post-date">2026-01-20</span>
                 </li>
                 <li class="tech-item">
-                    <span class="post-title">LOG_003: [ENCRYPTED] 暂无权限访问</span>
+                    <span class="post-title">LOG_003: [ENCRYPTED] </span>
                     <span class="post-date">---- -- --</span>
                 </li>
             </ul>
         </div>
     </div>
 
-    <!-- A-1. 具体的博客文章页 (熊大熊二) -->
+    <!-- A-1. 具体的博客文章页  -->
     <div id="post-1" class="sub-page hidden">
         <div class="page-header">
             <div class="page-title" style="font-size: 1.5rem;">LOG_001</div>
-            <!-- 返回博客列表，而不是首页 -->
+            <!-- 返回博客列表，而不是首页 -->   
             <button class="back-btn" onclick="closePost('post-1')">< BACK TO LIST</button>
         </div>
         <article class="blog-content fade-in">
-            <h2>如何不让熊大熊二捣乱</h2>
+            <h2>New founding</h2>
             <p style="font-family: 'Courier New', monospace; color: #666; font-size: 0.9rem;">
                 // Author: Zirui Zhang<br>
                 // Category: Strategy<br>
@@ -277,14 +477,38 @@
             </p>
             <hr style="border: 0; border-top: 1px dashed #444; margin: 20px 0;">
             
-            <p>这是一个非常严肃的战术问题。</p>
-            <p>首先，我们需要分析“熊大”和“熊二”的行为模式。根据长期观察（参考《熊出没》相关文献），它们的主要动机通常是寻找食物（蜂蜜/水果）或保护森林。</p>
-            <p><strong>策略一：蜂蜜诱导法（The Honey Pot Strategy）</strong><br>
-            在远离核心基地的区域设置高纯度蜂蜜诱饵。注意：必须定期补货，否则它们会因饥饿而回流。</p>
-            <p><strong>策略二：光头强的反面教材</strong><br>
-            不要试图使用电锯或其他产生高分贝噪音的设备。这会直接触发仇恨值。</p>
-            <p><strong>结论：</strong><br>
-            最好的防御是共存。只要不破坏森林，这两位通常是友好的NPC。</p>
+             <p>
+            Traditional programming is like teaching a computer to follow a recipe: "Add sugar, stir, bake." You define every rule explicitly.
+        </p>
+        <p>
+            <strong>Machine Learning (ML)</strong>, however, is different. It's like giving the computer a thousand photos of cakes and asking it to figure out what a cake looks like on its own. It's not about explicit rules; it's about <em>patterns</em>.
+        </p>
+
+        <h3 style="color: #fff; margin-top: 30px; margin-bottom: 15px;">The Paradigm Shift</h3>
+        <p>
+            When I wrote my first "Hello World" in Python, I felt like a commander giving orders. But when I ran my first Linear Regression model, I felt like a gardener planting seeds and watching them grow.
+        </p>
+
+        <!-- 模拟代码块样式 -->
+        <div style="background: #000; border: 1px solid #333; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.85rem; color: #ccc;">
+            <span style="color: #666;"># A simple glimpse into Scikit-learn</span><br><br>
+            <span style="color: #c678dd;">from</span> sklearn.linear_model <span style="color: #c678dd;">import</span> LinearRegression<br>
+            <span style="color: #c678dd;">import</span> numpy <span style="color: #c678dd;">as</span> np<br><br>
+            <span style="color: #666;"># Data: Hours studied vs. Score</span><br>
+            X = np.array([[1], [2], [3], [4]])<br>
+            y = np.array([10, 20, 30, 40])<br><br>
+            model = LinearRegression()<br>
+            model.fit(X, y)<br><br>
+            <span style="color: #e5c07b;">print</span>(model.predict([[5]])) <span style="color: #666;"># Output: [50.]</span>
+        </div>
+
+        <p>
+            The magic happens in the <code>.fit()</code> function. The machine "learned" the relationship between X and y without me writing <code>y = 10 * x</code>.
+        </p>
+
+        <p>
+            This is just the beginning. From Supervised Learning to Neural Networks, the path ahead is foggy but fascinating.
+        </p>
             
             <div style="margin-top: 50px; padding: 20px; background: #222; border: 1px solid var(--acid-green); color: var(--acid-green); text-align: center;">
                 END OF FILE
@@ -302,15 +526,14 @@
             <span class="role-badge">ROLE: CLASS MONITOR</span>
             <h2 style="margin-bottom: 20px;">我的校园足迹</h2>
             <p style="line-height: 1.8; margin-bottom: 15px;">
-                在校期间，我始终保持着对技术与管理的热忱。作为班长，我不仅是老师与同学之间的桥梁，更是一个微型团队的管理者。
+                During my school years, I have always maintained a passion for technology and management. As the class monitor, I was not only a bridge between the teacher and my classmates but also a manager of a mini team.
             </p>
             <p style="line-height: 1.8;">
-                这段经历教会了我如何平衡各方利益，如何在压力下做出决策，以及——最重要的一点：如何让所有人按时交作业。
+                This experience taught me how to balance various tasks, how to make decisions under pressure, and most importantly, how to effectively complete the tasks.
             </p>
             <ul style="margin-top: 20px; padding-left: 20px; list-style: square;">
-                <li>组织策划了 3 次大型班级团建活动。</li>
-                <li>获得“优秀学生干部”称号。</li>
-                <li>主导了校园技术论坛的 UI 重构。</li>
+                <li>Has participated in many large-scale college events.</li>
+                <li>Has received the second-class academic scholarship from the university</li>
             </ul>
         </div>
     </div>
@@ -323,11 +546,11 @@
         </div>
         <div class="thought-container fade-in">
             <div class="quote-box">
-                <p>在这个信息过载的时代，建立这个网站的初衷，是为了寻找一片属于自己的数字净土。</p>
+                <p>In this era of information overload, the original intention of establishing this website was to find a digital haven of one's own.</p>
                 <br>
-                <p>不是为了流量，不是为了点赞。</p>
+                <p>Not for traffic, not for likes. </p>
                 <br>
-                <p>只是为了记录下那些稍纵即逝的灵感，以及证明在这个庞大的互联网中，<b>Zirui Zhang</b> 曾真切地思考过。</p>
+                <p>Just to record those fleeting inspirations and to prove that <b>Zirui Zhang</b>  truly thought in this vast internet.</p>
             </div>
             <div style="margin-top: 60px; font-family: 'Courier New', monospace; font-size: 0.8rem; color: #666;">
                 > SYSTEM.LOG(CURRENT_MOOD)<br>
