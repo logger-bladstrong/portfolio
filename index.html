@@ -226,191 +226,292 @@
             </div>
         </section>
 
-
-        <section>
-
-            
-                            <!-- D. 个人简历页 (Resume) -->
-            <div id="page-resume" class="page-resume">
-                <!-- 顶部导航 -->
-                <div class="page-header">
-                    <div class="page-title">RESUME_DATA</div>
-                    <button class="back-btn" onclick="goHome()">CAN NOT [ ESC ] ???</button>
-                </div>
-
-                <!-- 简历主体容器 -->
-                <div class="resume-container fade-in">
-                    
-                    <!-- 左栏：个人信息 (ID Card) -->
-                    <div class="resume-left">
-                        <!-- 头像框：请替换 src 为你的真实照片路径 -->
-                        <div class="avatar-box">
-                            <img src="https://ts1.tc.mm.bing.net/th/id/R-C.fb838f67980ff0388bd978bef9c5a1a1?rik=yLNC7P6yfY%2bybg&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn00%2f200%2fw600h400%2f20180508%2f2064-hacuuvu7212855.jpg&ehk=jDmT0FjBCE3qUBDmlUDTcPb6QrgJfZM3c8t8xMdO%2fLM%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
-                        </div>
-                        
-                        <h2 class="resume-name">Zirui Zhang</h2>
-                        <div class="resume-label">STATUS: ONLINE</div>
-                        
-                        <div class="contact-info">
-                            <p><strong>EMAIL:</strong><br>zhangzirui@arizona.edu</p>
-                            <p><strong>GITHUB:</strong><br><a href="https://github.com/logger-bladstrong">logger-bladstrong</a></p>
-                        </div>
-                    </div>
-
-                    <!-- 右栏：详细履历 (Data Panel) -->
-                    <div class="resume-right">
-                        
-                        <!-- 1. 职业意向 -->
-                        <div class="resume-section">
-                            <h3 class="resume-title">/// TARGET ROLE</h3>
-                            <p class="resume-highlight">DATA SCIENTIST</p>
-                        </div>
-
-                        <!-- 2. 技能掌握 -->
-                        <div class="resume-section">
-                            <h3 class="resume-title">/// TECH STACK</h3>
-                            <div class="skill-grid">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">R Language</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Stata</span>
-                                <span class="skill-tag">EViews</span>
-                                <span class="skill-tag highlight">Vue.js (Basic)</span>
-                            </div>
-                        </div>
-
-                        <!-- 3. 教育背景 -->
-                        <div class="resume-section">
-                            <h3 class="resume-title">/// EDUCATION</h3>
-                            <div class="resume-item">
-                                <div class="item-header">
-                                    <span>Capital University of Economics and Business</span>
-                                    <span class="item-date">202X - 202X</span>
-                                </div>
-                                <p class="item-sub">B.S. in Statistics (Sino-Foreign Joint Program)</p>
-                            </div>
-                        </div>
-
-                        <!-- 4. 学术成果 -->
-                        <div class="resume-section">
-                            <h3 class="resume-title">/// ACADEMIC ACHIEVEMENTS</h3>
-                            <p style="color: #666; font-family: 'Courier New', monospace;">
-                                > NO_DATA_FOUND <br>
-                                > [ Pending future updates... ]
-                            </p>
-                        </div>
-
-                        <!-- 5. 本科作品 -->
-                        <div class="resume-section">
-                            <h3 class="resume-title">/// PROJECTS</h3>
-                            
-                            <!-- 项目 1 -->
-                            <div class="resume-item">
-                                <div class="item-header">
-                                    <span>Simple Banking System Simulation</span>
-                                    <span class="item-tag">C Language</span>
-                                </div>
-                                <p>
-                                    Solo Developer. Designed and implemented a basic banking system focusing on backend logic, 
-                                    including user account management, transaction processing, and data security logic.
-                                </p>
-                            </div>
-
-                            <!-- 项目 2 -->
-                            <div class="resume-item">
-                                <div class="item-header">
-                                    <span>Time Series Analysis on Amazon Data</span>
-                                    <span class="item-tag">R Language</span>
-                                </div>
-                                <p>
-                                    Team Collaboration. Analyzed Amazon's historical data trends. 
-                                    Performed data cleaning, visualization, and modeled trends using Time Series algorithms to predict future fluctuations.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- 局部样式：只作用于简历页 -->
-                <style>
-                    .page-resume {
-                        background-color: #000;
-
-                    }
-
-
-
-                    .resume-container {
-                        display: flex;
-                        flex-wrap: wrap; /* 手机端自动换行 */
-                        gap: 40px;
-                        max-width: 1000px;
-                        margin: 0 auto;
-                    }
-
-                    /* 左栏样式 */
-                    .resume-left {
-                        flex: 1;
-                        min-width: 250px;
-                        background: rgba(255,255,255,0.05);
-                        border: 1px solid #333;
-                        padding: 30px;
-                        text-align: center;
-                        height: fit-content;
-                    }
-                    .avatar-box {
-                        width: 150px; height: 150px;
-                        margin: 0 auto 20px;
-                        border: 2px solid var(--acid-green);
-                        overflow: hidden;
-                        border-radius: 50%; /* 圆形头像 */
-                        background: #000;
-                    }
-                    .avatar-box img { width: 100%; height: 100%; object-fit: cover; }
-                    .resume-name { color: #fff; font-size: 1.8rem; text-transform: uppercase; margin-bottom: 5px; }
-                    .resume-label { color: var(--acid-green); font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 30px; }
-                    .contact-info { text-align: left; border-top: 1px dashed #444; padding-top: 20px; color: #ccc; font-size: 0.9rem; }
-
-                    /* 右栏样式 */
-                    .resume-right { flex: 3; min-width: 300px; }
-                    .resume-section { margin-bottom: 40px; }
-                    .resume-title {
-                        font-size: 1rem; color: #666;
-                        border-bottom: 1px solid var(--acid-green);
-                        padding-bottom: 5px; margin-bottom: 15px;
-                        letter-spacing: 2px;
-                    }
-                    .resume-highlight { font-size: 2rem; color: #fff; font-weight: bold; }
-
-                    /* 技能标签 */
-                    .skill-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-                    .skill-tag {
-                        border: 1px solid #444; color: #aaa;
-                        padding: 5px 15px; font-size: 0.9rem;
-                        font-family: 'Courier New', monospace;
-                        transition: 0.3s;
-                    }
-                    .skill-tag:hover { border-color: var(--acid-green); color: var(--acid-green); background: rgba(218, 246, 0, 0.05); }
-                    .skill-tag.highlight { border-color: #666; color: #fff; }
-
-                    /* 项目与经历 */
-                    .resume-item { margin-bottom: 25px; }
-                    .item-header {
-                        display: flex; justify-content: space-between; align-items: center;
-                        margin-bottom: 8px;
-                    }
-                    .item-header span:first-child { font-size: 1.2rem; color: #fff; font-weight: bold; }
-                    .item-date { color: var(--acid-green); font-family: monospace; }
-                    .item-tag { background: #333; color: #ccc; font-size: 0.7rem; padding: 2px 6px; border-radius: 2px; }
-                    .item-sub { color: #ccc; font-style: italic; }
-                    .resume-item p { color: #999; line-height: 1.6; font-size: 0.95rem; }
-                </style>
+            <!-- 放在 blocks-container 下方 -->
+        <section class="home-resume-section">
+    <!-- 背景装饰：巨大的半透明编号 -->
+    <div class="bg-deco-number">04</div>
+    
+    <div class="resume-wrapper">
+        <!-- 左侧：身份识别卡 (Identity) -->
+        <div class="profile-card">
+            <div class="avatar-frame">
+                <!-- 这里的clip-path切角是方舟UI的典型特征 -->
+                <img src="https://th.bing.com/th/id/R.fb838f67980ff0388bd978bef9c5a1a1?rik=yLNC7P6yfY%2bybg&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn00%2f200%2fw600h400%2f20180508%2f2064-hacuuvu7212855.jpg&ehk=jDmT0FjBCE3qUBDmlUDTcPb6QrgJfZM3c8t8xMdO%2fLM%3d&risl=&pid=ImgRaw&r=0" alt="Zirui Zhang">
+                <div class="corner-mark"></div>
             </div>
+            <div class="profile-text">
+                <h2 class="name-en">Zirui Zhang</h2>
+                <span class="role-badge">DATA SCIENTIST</span>
+                
+                <div class="contact-lines">
+                    <div class="contact-row">
+                        <span class="c-label">MAIL //</span> 
+                        <span class="c-val">zhangzirui@arizona.edu</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="c-label">GIT //</span> 
+                        <span class="c-val"><a href="https://github.com/logger-bladstrong">logger-bladstrong</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧：数据面板 (Data Specification) -->
+        <div class="details-panel">
+            
+            <!-- 技能栈：扁平化标签 -->
+            <div class="panel-row">
+                <h3 class="panel-title">SKILL_STACK</h3>
+                <div class="tags-group">
+                    <span class="flat-tag">Python</span>
+                    <span class="flat-tag">R</span>
+                    <span class="flat-tag">SQL</span>
+                    <span class="flat-tag">Java</span>
+                    <span class="flat-tag">Stata</span>
+                    <span class="flat-tag special">Vue.js</span>
+                </div>
+            </div>
+
+            <!-- 教育 & 经历：时间轴风格 -->
+            <div class="panel-row">
+                <h3 class="panel-title">EDUCATION & PROJECTS</h3>
+                
+                <div class="timeline-box">
+                    <!-- 教育 -->
+                    <div class="t-item">
+                        <div class="t-head">
+                            <span class="t-name">Capital Univ. of Economics and Business</span>
+                            <span class="t-time">202X - 202X</span>
+                        </div>
+                        <div class="t-desc">B.S. in Statistics (Sino-Foreign Joint Program)</div>
+                    </div>
+
+                    <!-- 项目1 -->
+                    <div class="t-item">
+                        <div class="t-head">
+                            <span class="t-name">Banking System Sim.</span>
+                            <span class="t-tag">C Lang</span>
+                        </div>
+                        <div class="t-desc">Designed backend logic for user accounts and secure transactions.</div>
+                    </div>
+
+                    <!-- 项目2 -->
+                    <div class="t-item">
+                        <div class="t-head">
+                            <span class="t-name">Amazon Data Analysis</span>
+                            <span class="t-tag">R Lang</span>
+                        </div>
+                        <div class="t-desc">Time Series modeling to predict trend fluctuations.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         </section>
 
+        <style>
+    /* 局部样式：首页简历专用 */
+    :root {
+        --ri-blue: #00D2FC; /* 罗德岛蓝 */
+        --ri-dark: #222;
+        --ri-gray: #f2f2f2;
+        --ri-line: #ddd;
+    }
+
+    .home-resume-section {
+        position: relative;
+        background: #fff;
+        padding: 100px 10%;
+        border-top: 1px solid var(--ri-line);
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    /* 背景巨大的数字装饰 */
+    .bg-deco-number {
+        position: absolute;
+        top: -50px;
+        right: -20px;
+        font-size: 15rem;
+        font-weight: 900;
+        color: #f7f7f7;
+        z-index: 0;
+        pointer-events: none;
+        font-family: 'Impact', sans-serif;
+    }
+
+    .resume-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+    }
+
+    /* --- 左侧身份卡 --- */
+    .profile-card {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .avatar-frame {
+        position: relative;
+        width: 100%;
+        max-width: 240px;
+        aspect-ratio: 1/1;
+        background: #f0f0f0;
+        margin-bottom: 25px;
+        /* 方舟风格切角 */
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+    }
+    
+    .avatar-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .avatar-frame:hover img {
+        filter: grayscale(0%); /* 悬停恢复彩色 */
+    }
+
+    .corner-mark {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: var(--ri-blue); /* 蓝色小三角装饰 */
+        z-index: 2;
+    }
+
+    .name-en {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: var(--ri-dark);
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .role-badge {
+        display: inline-block;
+        background: var(--ri-dark);
+        color: #fff;
+        padding: 4px 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+
+    .contact-row {
+        font-family: 'Courier New', monospace;
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+    }
+    .c-label { color: #aaa; font-weight: bold; }
+    .c-val a { color: #666; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
+    .c-val a:hover { color: var(--ri-blue); border-color: var(--ri-blue); }
+
+
+    /* --- 右侧数据面板 --- */
+    .details-panel {
+        flex: 2;
+        padding-top: 10px;
+    }
+
+    .panel-row { margin-bottom: 50px; }
+
+    .panel-title {
+        font-size: 0.9rem;
+        color: #999;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        border-left: 3px solid var(--ri-blue); /* 蓝色竖线索引 */
+        padding-left: 10px;
+    }
+
+    /* 扁平标签组 */
+    .tags-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    
+    .flat-tag {
+        background: var(--ri-gray);
+        color: #555;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+    .flat-tag:hover {
+        background: var(--ri-blue);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+    .flat-tag.special {
+        background: #fff;
+        border: 1px solid var(--ri-blue);
+        color: var(--ri-blue);
+    }
+
+    /* 时间轴列表 */
+    .timeline-box {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .t-item {
+        position: relative;
+    }
+
+    .t-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+        border-bottom: 1px dashed #ddd; /* 虚线分割，轻盈 */
+        padding-bottom: 5px;
+    }
+
+    .t-name { font-weight: 700; color: #333; font-size: 1.1rem; }
+    
+    .t-time, .t-tag { 
+        font-family: 'Courier New', monospace; 
+        font-size: 0.8rem; 
+        color: #888; 
+    }
+    
+    .t-tag {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 2px;
+        color: #555;
+    }
+
+    .t-desc {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+        .resume-wrapper {
+            flex-direction: column;
+            gap: 40px;
+        }
+        .bg-deco-number {
+            font-size: 8rem;
+            top: 0;
+        }
+        .name-en { font-size: 1.8rem; }
+    }
+        </style>
 
 
 
