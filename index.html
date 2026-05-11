@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zirui Zhang's World</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. 欢迎页 -->
+    <div id="welcome-screen">
+        <div class="grid-bg"></div>
+        <div class="glass-box" id="enter-btn">
+            <h1>Welcome to zirui zhang World</h1>
+            <p>SYSTEM ONLINE // INITIALIZING...</p>
+        </div>
+    </div>
+
+    <!-- 2. 首页内容 -->
+    <main id="home-screen">
+        <section class="hero-section">
+            <div class="carousel-slide slide-1 active"></div>
+            <div class="carousel-slide slide-2"></div>
+            <div class="carousel-slide slide-3"></div>
+            <div class="hero-overlay"><h2>about myself</h2></div>
+        </section>
+
+        <section class="blocks-container">
+            <div class="block-item" id="btn-blog">
+                <h3>个人博客</h3>
+                <p>Blog // Data Logs</p>
+            </div>
+            <div class="block-item" id="btn-campus">
+                <h3>校园生活</h3>
+                <p>Campus // Memory</p>
+            </div>
+            <div class="block-item" id="btn-thoughts">
+                <h3>个人思考</h3>
+                <p>Thoughts // Origin</p>
+            </div>
+        </section>
+
+        <section class="home-resume-section">
+            <div class="bg-deco-number">04</div>
+            <div class="resume-wrapper">
+                <div class="profile-card">
+                    <div class="avatar-frame">
+                        <img src="https://th.bing.com/th/id/R.fb838f67980ff0388bd978bef9c5a1a1?rik=yLNC7P6yfY%2bybg&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn00%2f200%2fw600h400%2f20180508%2f2064-hacuuvu7212855.jpg&ehk=jDmT0FjBCE3qUBDmlUDTcPb6QrgJfZM3c8t8xMdO%2fLM%3d&risl=&pid=ImgRaw&r=0" alt="Zirui Zhang">
+                        <div class="corner-mark"></div>
+                    </div>
+                    <div class="profile-text">
+                        <h2 class="name-en">Zirui Zhang</h2>
+                        <span class="role-badge">DATA SCIENTIST</span>
+                        <div class="contact-lines">
+                            <div class="contact-row">
+                                <span class="c-label">MAIL //</span>
+                                <span class="c-val">zhangzirui@arizona.edu</span>
+                            </div>
+                            <div class="contact-row">
+                                <span class="c-label">GIT //</span>
+                                <span class="c-val"><a href="https://github.com/logger-bladstrong">logger-bladstrong</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-panel">
+                    <div class="panel-row">
+                        <h3 class="panel-title">SKILL_STACK</h3>
+                        <div class="tags-group">
+                            <span class="flat-tag">Python</span>
+                            <span class="flat-tag">R</span>
+                            <span class="flat-tag">SQL</span>
+                            <span class="flat-tag">Java</span>
+                            <span class="flat-tag">Stata</span>
+                            <span class="flat-tag special">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="panel-row">
+                        <h3 class="panel-title">EDUCATION & PROJECTS</h3>
+                        <div class="timeline-box">
+                            <div class="t-item">
+                                <div class="t-head">
+                                    <span class="t-name">Capital Univ. of Economics and Business</span>
+                                    <span class="t-time">202X - 202X</span>
+                                </div>
+                                <div class="t-desc">B.S. in Statistics (Sino-Foreign Joint Program)</div>
+                            </div>
+                            <div class="t-item">
+                                <div class="t-head">
+                                    <span class="t-name">Banking System Sim.</span>
+                                    <span class="t-tag">C Lang</span>
+                                </div>
+                                <div class="t-desc">Designed backend logic for user accounts and secure transactions.</div>
+                            </div>
+                            <div class="t-item">
+                                <div class="t-head">
+                                    <span class="t-name">Amazon Data Analysis</span>
+                                    <span class="t-tag">R Lang</span>
+                                </div>
+                                <div class="t-desc">Time Series modeling to predict trend fluctuations.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h4 style="letter-spacing:4px; color:#ccc;">ABOUT ME</h4>
+            <p style="margin-top:20px; color:#555;">there is Zirui Zhang. calm down，stay focused.</p>
+        </section>
+
+        <footer>&copy; 2026 Zirui Zhang. All Rights Reserved.</footer>
+    </main>
+
+    <!-- 3. 子页面区域 (默认隐藏) -->
+
+    <!-- A. 个人博客列表页 -->
+    <div id="page-blog" class="sub-page hidden">
+        <div class="page-header">
+            <div class="page-title">DATA LOGS</div>
+            <button class="back-btn" onclick="goHome()">[ ESC ] RETURN</button>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <ul class="tech-list">
+                <li class="tech-item" onclick="openPost('post-1')">
+                    <span class="post-title">LOG_001: new founding</span>
+                    <span class="post-date">2026-01-26</span>
+                </li>
+                <li class="tech-item" onclick="openPost('post-2')">
+                    <span class="post-title">LOG_002: Aero Engine Report</span>
+                    <span class="post-date">2026-01-20</span>
+                </li>
+                <li class="tech-item">
+                    <span class="post-title">LOG_003: [ENCRYPTED] </span>
+                    <span class="post-date">---- -- --</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- A-1. 具体的博客文章页 -->
+    <div id="post-1" class="sub-page hidden">
+        <div class="page-header">
+            <div class="page-title" style="font-size: 1.5rem;">LOG_001</div>
+            <button class="back-btn" onclick="closePost('post-1')">&lt; BACK TO LIST</button>
+        </div>
+        <article class="blog-content fade-in">
+            <h2>New founding</h2>
+            <p style="font-family: 'Courier New', monospace; color: #666; font-size: 0.9rem;">
+                // Author: Zirui Zhang<br>
+                // Category: Strategy<br>
+                // Status: Solved
+            </p>
+            <hr style="border: 0; border-top: 1px dashed #444; margin: 20px 0;">
+            <p>
+                Traditional programming is like teaching a computer to follow a recipe: "Add sugar, stir, bake." You define every rule explicitly.
+            </p>
+            <p>
+                <strong>Machine Learning (ML)</strong>, however, is different. It's like giving the computer a thousand photos of cakes and asking it to figure out what a cake looks like on its own. It's not about explicit rules; it's about <em>patterns</em>.
+            </p>
+            <h3 style="color: #fff; margin-top: 30px; margin-bottom: 15px;">The Paradigm Shift</h3>
+            <p>
+                When I wrote my first "Hello World" in Python, I felt like a commander giving orders. But when I ran my first Linear Regression model, I felt like a gardener planting seeds and watching them grow.
+            </p>
+            <div style="background: #000; border: 1px solid #333; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.85rem; color: #ccc;">
+                <span style="color: #666;"># A simple glimpse into Scikit-learn</span><br><br>
+                <span style="color: #c678dd;">from</span> sklearn.linear_model <span style="color: #c678dd;">import</span> LinearRegression<br>
+                <span style="color: #c678dd;">import</span> numpy <span style="color: #c678dd;">as</span> np<br><br>
+                <span style="color: #666;"># Data: Hours studied vs. Score</span><br>
+                X = np.array([[1], [2], [3], [4]])<br>
+                y = np.array([10, 20, 30, 40])<br><br>
+                model = LinearRegression()<br>
+                model.fit(X, y)<br><br>
+                <span style="color: #e5c07b;">print</span>(model.predict([[5]])) <span style="color: #666;"># Output: [50.]</span>
+            </div>
+            <p>
+                The magic happens in the <code>.fit()</code> function. The machine "learned" the relationship between X and y without me writing <code>y = 10 * x</code>.
+            </p>
+            <p>
+                This is just the beginning. From Supervised Learning to Neural Networks, the path ahead is foggy but fascinating.
+            </p>
+            <div style="margin-top: 50px; padding: 20px; background: #000; border: 1px solid #333; color: #fff; text-align: center;">
+                END OF FILE
+            </div>
+        </article>
+    </div>
+
+    <!-- A-2. 航空发动机预测维护报告可视化页 -->
+    <div id="post-2" class="sub-page hidden">
+        <div class="page-header">
+            <div class="page-title" style="font-size: 1.2rem;">AERO-ENGINE PREDICTIVE MAINTENANCE</div>
+            <button class="back-btn" onclick="closePost('post-2')">&lt; BACK TO LIST</button>
+        </div>
+        
+        <div class="report-container fade-in">
+            <!-- 报告头部 -->
+            <div class="report-hero">
+                <h1 class="report-title">Research Report on Aero-engine Predictive Maintenance</h1>
+                <p class="report-subtitle">Based on Physical Intuition and Neural Learning</p>
+                <div class="report-meta">
+                    <span>Nuohu Li • Qiuyu Wang • Zirui Zhang</span>
+                    <span>April 29, 2026</span>
+                </div>
+            </div>
+
+            <!-- 摘要卡片 -->
+            <div class="report-section">
+                <h3 class="section-label">ABSTRACT</h3>
+                <div class="abstract-card">
+                    <p>
+                        This project studies predictive maintenance for turbofan engines using the NASA C-MAPSS FD001 degradation dataset. 
+                        The central goal is not only to classify whether an engine is entering a high-risk failure window, 
+                        but also to explain why the model reaches that warning decision.
+                    </p>
+                    <div class="highlight-tags">
+                        <span class="h-tag">NASA C-MAPSS</span>
+                        <span class="h-tag">LSTM Attention</span>
+                        <span class="h-tag">Random Forest</span>
+                        <span class="h-tag">Asymmetric Loss</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 核心指标 -->
+            <div class="report-section">
+                <h3 class="section-label">KEY METRICS</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">0.997</div>
+                        <div class="metric-label">Random Forest AUC</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">0.996</div>
+                        <div class="metric-label">MLP Fallback AUC</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">0.88</div>
+                        <div class="metric-label">RF Precision</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">0.82</div>
+                        <div class="metric-label">MLP Recall</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模型对比表 -->
+            <div class="report-section">
+                <h3 class="section-label">MODEL COMPARISON</h3>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1</th>
+                                <th>AUC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Random Forest + Slope</td>
+                                <td>0.88–0.90</td>
+                                <td>0.74</td>
+                                <td>0.80–0.81</td>
+                                <td>≈ 0.997</td>
+                            </tr>
+                            <tr>
+                                <td>MLP Neural Fallback</td>
+                                <td>0.80</td>
+                                <td>0.82</td>
+                                <td>0.81</td>
+                                <td>≈ 0.996</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">
+                    The Random Forest achieves excellent overall discrimination with high precision, 
+                    while the MLP fallback improves high-risk recall — critical for safety-critical maintenance decisions.
+                </p>
+            </div>
+
+            <!-- 方法论流程 -->
+            <div class="report-section">
+                <h3 class="section-label">METHODOLOGY</h3>
+                <div class="method-flow">
+                    <div class="flow-step">
+                        <div class="step-num">01</div>
+                        <div class="step-title">Data Preprocessing</div>
+                        <div class="step-desc">Variance diagnostics, correlation analysis, PCA visualization</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">02</div>
+                        <div class="step-title">Feature Engineering</div>
+                        <div class="step-desc">30-cycle sliding windows, local slope features, micro-fault injection</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">03</div>
+                        <div class="step-title">Model Training</div>
+                        <div class="step-desc">Random Forest baseline + Attention-LSTM with asymmetric focal loss</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-num">04</div>
+                        <div class="step-title">Risk Evaluation</div>
+                        <div class="step-desc">Recall-priority threshold selection, physical interpretability analysis</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关键洞察 -->
+            <div class="report-section">
+                <h3 class="section-label">KEY INSIGHTS</h3>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">⚠</div>
+                        <h4>Asymmetric Risk</h4>
+                        <p>A missed fault is much worse than an unnecessary warning. The model uses γ_fn = 10, γ_fp = 1 to prioritize recall.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🔬</div>
+                        <h4>Physical Intuition</h4>
+                        <p>Sensor correlation patterns reveal directional degradation: positive in sensors 11/4/15/17, negative in 12/7/21/20.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🧠</div>
+                        <h4>Neural Attention</h4>
+                        <p>Attention weights identify which time steps influence warnings — recent abnormal signals get higher weights.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 技术栈 -->
+            <div class="report-section">
+                <h3 class="section-label">TECH STACK</h3>
+                <div class="tech-stack">
+                    <div class="stack-category">
+                        <span class="stack-cat-name">Data</span>
+                        <span class="stack-item">pandas</span>
+                        <span class="stack-item">NumPy</span>
+                        <span class="stack-item">SciPy</span>
+                    </div>
+                    <div class="stack-category">
+                        <span class="stack-cat-name">ML</span>
+                        <span class="stack-item">scikit-learn</span>
+                        <span class="stack-item">TensorFlow</span>
+                        <span class="stack-item">Keras</span>
+                    </div>
+                    <div class="stack-category">
+                        <span class="stack-cat-name">Viz</span>
+                        <span class="stack-item">Matplotlib</span>
+                        <span class="stack-item">seaborn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF 下载 -->
+            <div class="report-section">
+                <h3 class="section-label">FULL REPORT</h3>
+                <div class="pdf-download">
+                    <div class="pdf-info">
+                        <span class="pdf-name">revised_aero_engine_report_fixed.pdf</span>
+                        <span class="pdf-meta">753 KB • 7 Pages • April 2026</span>
+                    </div>
+                    <a href="revised_aero_engine_report_fixed.pdf" target="_blank" class="pdf-btn">
+                        OPEN PDF →
+                    </a>
+                </div>
+            </div>
+
+            <div class="report-footer">
+                <p>© 2026 Nuohu Li, Qiuyu Wang, Zirui Zhang. NASA C-MAPSS Dataset.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- B. 校园生活页 -->
+    <div id="page-campus" class="sub-page hidden" style="background: #f0f0f0; color: #333;">
+        <div class="page-header" style="border-color: #333;">
+            <div class="page-title" style="color: #333; text-shadow: none;">CAMPUS LIFE</div>
+            <button class="back-btn" onclick="goHome()" style="color: #333; border-color: #333;">[ ESC ] RETURN</button>
+        </div>
+        <div class="campus-card fade-in">
+            <span class="role-badge">ROLE: CLASS MONITOR</span>
+            <h2 style="margin-bottom: 20px;">我的校园足迹</h2>
+            <p style="line-height: 1.8; margin-bottom: 15px;">
+                During my school years, I have always maintained a passion for technology and management. As the class monitor, I was not only a bridge between the teacher and my classmates but also a manager of a mini team.
+            </p>
+            <p style="line-height: 1.8;">
+                This experience taught me how to balance various tasks, how to make decisions under pressure, and most importantly, how to effectively complete the tasks.
+            </p>
+            <ul style="margin-top: 20px; padding-left: 20px; list-style: square;">
+                <li>Has participated in many large-scale college events.</li>
+                <li>Has received the second-class academic scholarship from the university</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- C. 个人思考页 -->
+    <div id="page-thoughts" class="sub-page hidden">
+        <div class="page-header">
+            <div class="page-title">THOUGHTS</div>
+            <button class="back-btn" onclick="goHome()">[ ESC ] RETURN</button>
+        </div>
+        <div class="thought-container fade-in">
+            <div class="quote-box">
+                <p>In this era of information overload, the original intention of establishing this website was to find a digital haven of one's own.</p>
+                <br>
+                <p>Not for traffic, not for likes. </p>
+                <br>
+                <p>Just to record those fleeting inspirations and to prove that <b>Zirui Zhang</b>  truly thought in this vast internet.</p>
+            </div>
+            <div style="margin-top: 60px; font-family: 'Courier New', monospace; font-size: 0.8rem; color: #666;">
+                > SYSTEM.LOG(CURRENT_MOOD)<br>
+                > "CALM"<br>
+                > _
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
